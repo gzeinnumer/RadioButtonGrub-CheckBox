@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gzeinnumer.zeinbelajar3.MainActivity">
+    <TableLayout
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow android:gravity="center">
+            <TextView
+                android:id="@+id/txtM"
+                android:text="Merek    "
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtT"
+                android:text="    Type"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_below="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <RadioGroup
+                android:id="@+id/radioGroupMerek"
+                android:layout_marginLeft="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/rbAcer"
+                    android:text="@string/acer"
+                    android:onClick="checkButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rbAsus"
+                    android:text="@string/asus"
+                    android:onClick="checkButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rbAxio"
+                    android:text="@string/axio"
+                    android:onClick="checkButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rbThosiba"
+                    android:text="@string/toshiba"
+                    android:onClick="checkButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rbLenovo"
+                    android:text="@string/lenovo"
+                    android:onClick="checkButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <RadioGroup android:id="@+id/radioGroupType">
+                <RadioButton
+                    android:id="@+id/rbPc"
+                    android:text="@string/pc"
+                    android:onClick="checkButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rbLt"
+                    android:text="@string/laptop"
+                    android:onClick="checkButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </TableRow>
+        <TableRow android:gravity="center">
+            <Button
+                android:id="@+id/btnSubmit"
+                android:text="Submit"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+        </TableRow>
+        <TableRow android:gravity="center">
+            <TextView android:text="@string/pesan"
+                android:textAlignment="center"
+                android:layout_marginBottom="0dp"/>
+        </TableRow>
+        <TableRow android:gravity="center">
+            <EditText
+                android:id="@+id/etH"
+                android:textAlignment="center"
+                android:layout_marginTop="-10dp"/>
+        </TableRow>
+        <TableRow android:gravity="center">
+            <Button
+            android:text="Reset"
+            android:id="@+id/btnReset"/>
+        </TableRow>
+        <TableRow android:gravity="center">
+            <Button
+                android:text="Exit"
+                android:id="@+id/btnExit"/>
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>
+</ScrollView>

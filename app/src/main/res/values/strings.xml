@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Radio Button GZNVZ3</string>
+    <string name="acer">Acer</string>
+    <string name="asus">Asus</string>
+    <string name="axio">Axio</string>
+    <string name="lenovo">Lenovo</string>
+    <string name="toshiba">Toshiba</string>
+    <string name="pc">Komputer</string>
+    <string name="laptop">Laptop</string>
+    <string name="pesan">Yang Kamu Pesan</string>
+</resources>
